@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+canvas {
+    background-color: bisque;
+}
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: center;
+}
+
+h1, h2 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#gameScreen {
+    position: relative;
+    height: 500px;
+    width: 800px;
+
+    margin: auto;
+
+    overflow: hidden;
+}
+
+.inGamePanel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+
+    transition: top 400ms ease;
+}
+
+.overlay {
+    position: absolute;
+
+    top: 0%;
+}
+
+.msg {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 50pt;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
+}
+
+.leaderboard {
+    position: absolute;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    top: 25%;
+    left: 35%;
+
+    background-color: cadetblue;
+}
+
+.fade {
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

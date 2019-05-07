@@ -1,0 +1,19 @@
+{
+  "name": "Flappy Androbird",
+  "version": "1.0.0",
+  "description": "Flappy Androbird Multiplayer Game",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TODO"
+  },
+  "author": "Oren Zakay",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.7.2"
+  }
+}
