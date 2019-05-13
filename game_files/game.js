@@ -186,9 +186,7 @@ exports.startServer = function (server) {
 
             if (players_count === 0) {
                 clearInterval(interval);
-                obstacles = [];
-                gameState = Config.enumGameState.None;
-                frameNo = 0;
+                initialState();
             }
             console.log("socket count = " + players_count);
         });

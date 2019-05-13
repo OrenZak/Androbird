@@ -16,8 +16,8 @@ class Player {
         this.x = 10 + (pos % Config.MAX_BIRDS_IN_A_ROW * 50);
         this.y = 120 - (pos % Config.MAX_BIRDS_IN_A_ROW * 50);
         this.color = (pos % Config.MAX_BIRDS_IN_A_ROW) === 0 ? Config.enumBirdColor.RED : Config.enumBirdColor.BLUE;
-        this.width = 25;
-        this.height = 25;
+        this.width = Config.BIRD_WIDTH;
+        this.height = Config.BIRD_HEIGHT;
         this.gravity = 0.1;
         this.gravitySpeed = 0;
         this.speedX = 0;
@@ -55,11 +55,6 @@ class Player {
     updateState(state) {
         this.state = state;
     };
-
-    // jump() {
-    //     this.gravitySpeed = JUMP_SPEED;
-    //     this.rotation = MAX_ROTATION
-    // }
 }
 
 function calculateScore(frameNo) {

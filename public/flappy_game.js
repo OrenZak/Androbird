@@ -53,11 +53,10 @@ define(['../config'], function (Config) {
         myGameArea.clear();
 
         drawObstacles(obstacles);
-
         for (var id in players) {
             player = players[id];
             if (isMe(player)) {
-                drawText("SCORE: " + player.score, "25px Consolas", 280, 40)
+                drawText("SCORE: " + player.score, "25px Consolas", "black", 280, 40)
             }
             drawPlayer(player, now);
         }
@@ -88,7 +87,7 @@ define(['../config'], function (Config) {
     };
 
     function isMe(player) {
-        return player.id === socket.id;
+        return "" + player.id === "" + socket.id;
     }
 
     function drawText(text, font, color, x, y) {
