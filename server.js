@@ -7,8 +7,8 @@ var express = require('express'),
 
 var app = express();
 var server = http.Server(app);
-
-app.set('port', process.env.PORT || Config.SERVER_PORT);
+var port = process.env.PORT || Config.SERVER_PORT;
+app.set('port', port);
 app.use('/public', express.static(__dirname + '/public'));
 
 // Routing
