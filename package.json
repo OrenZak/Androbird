@@ -1,5 +1,5 @@
 {
-  "name": "Flappy Androbird",
+  "name": "androbird",
   "version": "1.0.0",
   "description": "Flappy Androbird Multiplayer Game",
   "main": "server.js",
