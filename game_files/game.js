@@ -135,7 +135,7 @@ function playersAreCrashed() {
 
 
 exports.startServer = function (server) {
-    server.listen(Config.SERVER_PORT, function () {
+    server.listen(process.env.PORT || Config.SERVER_PORT, function () {
         console.log('Starting server on port ' + Config.SERVER_PORT);
         console.log('Enter to game : ' + Config.WEB_URL + ':' + Config.SERVER_PORT);
     });
